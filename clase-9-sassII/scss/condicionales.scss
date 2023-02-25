@@ -1,0 +1,30 @@
+/*CONDICIONALES*/
+$vista: tableta;
+
+/*@if ($vista == escritorio){
+    body{
+        background-color: grey;
+    }
+
+} @else if($vista == tableta){
+    body{
+        background-color: bisque;
+    }
+
+} @else{
+    body{
+        background-color: blueviolet;
+    }
+}
+*/
+
+//Otra forma de hacerlo
+body{
+    @if ($vista == escritorio){
+        background-color: grey;
+    }@else if($vista == tableta){
+        background-color: bisque;
+    }@else{
+        background-color: blueviolet;
+    }
+}

@@ -7,6 +7,7 @@
     font-size: 14px;
 }*/
 /*Caracteristicas de SASS*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 header {
   background-color: bisque;
   display: flex;

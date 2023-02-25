@@ -1,0 +1,64 @@
+/*CONDICIONALES*/
+/*@if ($vista == escritorio){
+    body{
+        background-color: grey;
+    }
+
+} @else if($vista == tableta){
+    body{
+        background-color: bisque;
+    }
+
+} @else{
+    body{
+        background-color: blueviolet;
+    }
+}
+*/
+body {
+  background-color: bisque;
+}
+
+/*BUCLES*/
+/* For: Ciclo de Conteo: si quiero que me haga seis ciclos debo poner uno mas por eso
+va del 1 al 7 y no del 1 al 6*
+//to = termina en el valor anterior.
+// through = termina en el ultimo valor.*/
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 6rem;
+}
+
+h4 {
+  font-size: 8rem;
+}
+
+h5 {
+  font-size: 10rem;
+}
+
+h6 {
+  font-size: 12rem;
+}
+
+/*EACH*/
+.pink {
+  color: pink;
+}
+
+.green {
+  color: green;
+}
+
+.black {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

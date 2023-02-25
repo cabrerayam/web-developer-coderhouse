@@ -12,8 +12,7 @@
 
 //4) Puedo trabajar con archivos parciales:
 //Es una buena practica trabajar con archivos parciales y en el style.scss solo tener los imports
-@import "variables";
-@import"header";
+@import "fuentes","variables","header";
 
 /*2) Puedo usar variables:
 $titulos: blue;

@@ -1,0 +1,23 @@
+/*BUCLES*/ 
+
+/* For: Ciclo de Conteo: si quiero que me haga seis ciclos debo poner uno mas por eso
+va del 1 al 7 y no del 1 al 6*
+//to = termina en el valor anterior.
+// through = termina en el ultimo valor.*/
+
+@for $i from 1 to 7 {
+    //aqui ponemos la clase o la etiqueta que queremos configurar, en este caso la etiqueta h
+    h#{$i}{
+        font-size: 2rem * $i;
+    }
+}
+
+//Lista:
+$colores: 'pink', 'green', 'black';
+
+/*EACH*/
+@each $color in $colores{
+    .#{$color}{
+        color : #{$color}
+    }
+}
