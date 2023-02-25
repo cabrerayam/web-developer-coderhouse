@@ -1,0 +1,95 @@
+/* Esto es un comentario en ccs, el atajo es igual ctrl + k +u */
+
+/*
+Declaracion de ccs:
+
+selector{
+    propiedad: valor;
+
+}
+
+*/
+h1 {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* aplicar estilo usando id, aunque no es lo recomendable */
+#idParrafo {
+    color: green;
+
+}
+
+/* aplicar estilo usando un class, es la mejor opcion */
+.parrafo{
+    color: blue;
+}
+
+/* Caundo llamamos a una clase colocamos el . antes del nombre */
+/* Cuando llamamos a un id colocamos el # antes */
+
+/*CARACTERISTICAS PRINCIPALES DE CCS*/
+
+/* 1) PADRES E HIJOS: div es el padre y p es el hijo */
+
+/* Para que prevalezca la primera configuracion aplicada debo usar el
+ !important, aunque no es una buena practica, es algo provisorio */
+
+div p {
+    color: #40E0D0 !important; /*usando codigo de colores*/
+}
+
+
+/*2) CASCADA: La ultima configuracion que aplico al elemento pisa al anterior*/
+
+div p {
+    color :blueviolet;
+}
+
+/* 3) HERENCIA: Si aplico una configuracion a un contenedor padre, 
+por herencia se va a aplicar a los contenedores hijos */
+
+body {
+    background-color: #FFA07A;
+}
+
+/*PROPIEDADES MAS COMUNES*/
+
+/* PARA ESTILOS EN LOS TEXTOS */
+.parrafo{
+    text-align: center; /*para alinear el texto*/
+    font-weight: bold; /*peso de la fuente, para poner el texto en negrita o normal*/
+    font-style: verdana, Geneva, Tahoma, sans-serif; /*seleccionamos la fuente*/
+    font-size: 25px;
+}
+
+/* ESTILOS A LAS EIQUETAS a */
+a {
+    text-decoration: none; /*eliminamos el subrayado*/
+
+    color:black; /*cambio el color a la fuente*/
+
+    text-transform: uppercase; /*cambiamos el mayusculas en texto*/
+
+}
+
+/* ESTILOS A LAS LISTAS li */
+li {
+    list-style-type: none; /*eliminar la viñeta de la lista*/
+}
+
+/* ESTILOS A LOS FONDOS  */
+header {
+    /*background-image: url("../img/chica remera.webp"); /*agregar imagen usando un archivo local*/
+    background-image: url(https://images.pexels.com/photos/3297593/pexels-photo-3297593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); /*para vincular con un hipervinculo*/
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: cover; /*par que cubra todo el header*/
+    background-color: aqua; /*por si se pierde la imagen queda este color de fondo*/
+
+}
+
+
+
+

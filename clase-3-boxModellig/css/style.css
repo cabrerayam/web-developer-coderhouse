@@ -1,0 +1,98 @@
+/* traer fuentes desde https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+/*Algunos usos de display */
+/*Llevar una etiqueta en bloque a formato linea*/
+.divPrincipal {
+    display: inline;
+}
+/*Llevar una etiqueta en linea a formato bloque*/
+.span
+    {
+    display: block;
+}
+ /*si quiero que el elemento no se vea*/
+.desaparecer {
+    display: none;
+}
+
+/*BOX MODELLING: 
+TODO LO VEO COMO UNA CAJA*/
+
+/*BORDER*/
+.contenedor {
+    /* border:4px green solid;*/
+    border-top:4px red dashed;
+    border-left:4px green solid; 
+    border-right:4px orange groove;
+    border-bottom:4px black dotted;    
+
+/* direcciones:
+top: arriba
+bottom: abajo
+left: izquieda
+right: derecha
+*/
+
+/*MARGIN*/
+    /*margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 80px;
+    margin-bottom: 3px;*/
+
+/*para hacerlo en una sola linea,sigue el sentido horario: top right bottom left */
+    margin: 20px 15px 10px 5px;
+
+
+/*PADDING: espacion entre en contenido de la caja y el margin*/
+    padding: 20px 20px 20px 20px;
+}
+
+/*POSITION*/
+.cajaPrincipal{
+    background-color: bisque;
+    border: 2px black solid;
+    height: 620px;
+    position: relative;
+
+    /*width: ancho
+    height: alto
+    */
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: gray;
+    display: inline-block;
+}
+
+/*Position Relative*/
+.itemUno{
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+/*Position Absolute*/
+.itemDos{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+/*Position Fixed*/
+.itemTres{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/*Position Sticky*/
+.itemCuatro{
+    position: sticky;
+    top: 0px;
+}

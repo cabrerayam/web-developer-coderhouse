@@ -1,0 +1,140 @@
+/**************GRIDS****************/
+
+/*Aplicamos estilos a los contenedores*/
+.item{
+    background-color: #87cefa;
+    border: 1px black solid;
+}
+
+.item p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Contenedor Padre*/
+
+.gridPadre{
+    display: grid;
+
+    /*Configuramos la cantidad de filas y de columnas queremos en nuestra grilla*/
+    /*grid-template-columns: 300px 250px 180px;*/
+     /*grid-template-columns: 50% 50% ;*/
+    /* grid-template-columns: 300px auto;*/
+     /*grid-template-columns: 50% 300px auto;*/
+
+     /*Con fracciones: una nueva unidada de medida para trabajar con grid*/
+    /* grid-template-columns: 1fr 1fr 1fr;*/
+     /*grid-template-columns: 2fr 1fr;*/
+
+     /*Para que genere cierta cantidad de columnas iguales*/
+    /* grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: repeat(12, 1fr);*/
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    /*repeat()= retpite una configuracion*/
+    /*auto = ocupa el espacio disponible*/
+    /*grid-template-columns me permite configurar la cantidad de columnas*/
+    /*grid-template-rows me permite configurar la cantidad de filas*/
+    /*fr= nueva unidad de medida que se suma en grid y significa fraccion*/
+    
+    /*gap: 5px;
+    row-gap: 50px;
+    column-gap: 18px;*/
+    /*similar al anterior*/
+    gap: 50px 18px
+
+}
+
+    /***************************GRIDS AREAS************************************/
+
+    /*Para una vista de escritorio generalmente se trabaja en tres columnas*/
+    /*.contenedor {
+        display: grid;
+        gap: 20px;
+        grid-template-areas: 
+        "header header header"
+        "nav nav aside"
+        "nav nav aside"
+        " sectionA sectionB sectionB "
+        " sectionA sectionB sectionB "
+        " footer sectionB sectionB "
+        ;
+
+    }*/
+
+     /*Para una vista de tablet se trabaja con dos columnas*/
+   /*  .contenedor {
+        display: grid;
+        gap: 20px;
+        grid-template-areas: 
+        "header header "
+        "nav aside"
+        "nav sectionA"
+        "nav sectionB"
+        " footer footer "
+        ;
+    }*/
+
+      /*Para una vista de celu se trabaja en una sola columna*/
+
+     .contenedor {
+        display: grid;
+        gap: 20px;
+        grid-template-areas: 
+        "header "
+        "nav"
+        "aside"
+        "sectionA"
+        "sectionB"
+        " footer "
+        ;
+    }
+    
+
+    header {
+        background-color: blue;
+        grid-area: header; /*puede ser cualquier nombre que sea referencia del elemento que estamos modificando*/
+    }
+
+    nav {
+        background-color: orange;
+        grid-area: nav;
+    }
+
+    .sectionA{
+        background-color: bisque;
+        grid-area: sectionA;
+        /*Puedo combinar con flex*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sectionA p {
+        margin: 20px;
+    }
+
+    .sectionB{
+        background-color: blueviolet;
+        grid-area: sectionB;
+    }
+
+    aside{
+        background-color: aquamarine;
+        grid-area: aside;
+    }
+
+    footer{
+        background-color: red;
+        grid-area: footer;
+    }
+
+
+
+
+

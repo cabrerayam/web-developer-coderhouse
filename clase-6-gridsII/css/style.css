@@ -1,0 +1,27 @@
+.caja{
+    background-color: blueviolet;
+    border: 1px solid black;
+    width: 350px;
+    height: 350px;
+}
+
+/*UNIDADES DE MEDIDAS ABSOLUTAS Y RELATIVAS*/
+
+/*Absolutas: px */
+
+/*Relativas: % , vwm vh, rem*/
+
+html{
+    font-size: 62.5%;
+}
+
+.pixel{
+    font-size: 30px;
+}
+
+.rem{
+    font-size: 3rem;
+}
+
+/*16px = 1 rem*/
+/*Perso si coloco font size 62.% ahora 1 rem = 10px */

@@ -1,0 +1,51 @@
+/*Medias Queries*/
+
+.tituloMedias{
+    color: red;  
+}
+
+.texto{
+    color: blue;
+}
+
+/*Vista movil*/
+/*De 0px a 600px se le aplica lo siguiente*/
+@media(max-width:600px){
+    .tituloMedias{
+        color: green;
+    }
+
+    .texto{
+        color: yellow;
+    }
+}
+
+/*Vista tablet*/
+/*De 601px a 900px se le aplica lo siguiente, trabajando con rangos*/
+@media (min-width:601px) and (max-width: 900px){
+    .tituloMedias{
+        color: violet;
+    }
+
+    .texto{
+        color: bisque;
+    }
+} 
+
+/*Si queremos que la impresion siempre sea en blanco y negro*/
+@media print and (min-width:300px) {
+    .tituloMedias{
+        color: black;
+    }
+    .texto{
+        color: black;
+    }
+}
+
+/*Podemos colocar tambien "and (orientation: landscape)" para movil para que tenga mejor orientada la vista vertical */
+
+/* PRINT= se ultiliza para impresoras
+SCREEN = se utiliza para pantallas
+ALL = se utilizar para todos los dispositivos
+*/
+
