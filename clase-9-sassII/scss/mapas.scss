@@ -1,0 +1,16 @@
+/*MAPAS: Es una coleccion de variables*/
+$mapRedes:(facebook: red, instagram: blue, twitter: yellow);
+
+@each $redSocial, $colorRedSocial in $mapRedes{
+    .#{$redSocial} {
+        color: $colorRedSocial;
+    }
+}
+
+/*MAP - GET*/
+$estilo: (color:red,tamFuente:30px);
+
+.firulais{
+    background-color: map-get($estilo, color );
+    font-size: map-get($estilo, tamFuente);
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*CONDICIONALES*/
 /*@if ($vista == escritorio){
     body{
@@ -59,6 +60,56 @@ h6 {
 
 .black {
   color: black;
+}
+
+/*MAPAS: Es una coleccion de variables*/
+.facebook {
+  color: red;
+}
+
+.instagram {
+  color: blue;
+}
+
+.twitter {
+  color: yellow;
+}
+
+/*MAP - GET*/
+.firulais {
+  background-color: red;
+  font-size: 30px;
+}
+
+/*EXTENDS*/
+.primerEstilo, .segundoEstilo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: right;
+}
+
+.segundoEstilo {
+  font-size: 35px;
+}
+
+/*MIXIN: Es un bloque de configuracion para clases que repetimos usualmente*/
+/*MIXIN SIN PARAMETROS*/
+.parrafosConEstilo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.anclasConEstilos {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+/*MIXIN CON PARAMETROS*/
+.parrafosConSueño {
+  font-size: 20px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+/*MIXIN: Es un bloque de configuracion para clases que repetimos usualmente*/
+
+/*MIXIN SIN PARAMETROS*/
+@mixin parrafos{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.parrafosConEstilo{
+    @include parrafos;
+}
+
+@mixin anclas{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.anclasConEstilos{
+    @include anclas;
+}
+
+
+/*MIXIN CON PARAMETROS*/
+@mixin parrafoConParametros($size, $alineacion){
+    font-size: $size;
+    text-align: $alineacion;
+}
+
+.parrafosConSueño{
+    @include parrafoConParametros(20px,center);
+}
