@@ -1,9 +1,50 @@
-h1 {
+/*h1 {
     color : red;
-    font-size: 100px;
+    font-size: 48px;
+}*/
+
+/*h2 {
+    color: blueviolet;
+    font-size: 14px;
+}*/
+
+/*Caracteristicas de SASS*/
+
+//1) Ahora puedo anidar selectores:
+
+$titulos: blue;
+$margen: 1rem;
+
+header {
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        //color:red;
+        color : $titulos;
+    }
+
+    nav{
+        background-color: aquamarine;
+
+        li{
+            display: inline-block;
+            list-style: none;
+            margin: $margen;
+
+            a{
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
 }
 
-h2 {
-    color: blueviolet;
-    font-size: 48px;
-}
+//2) Puedo usar variables:
+
+//$titulos: green;
+
