@@ -1,26 +1,5 @@
-/*h1 {
-    color : red;
-    font-size: 48px;
-}*/
 
-/*h2 {
-    color: blueviolet;
-    font-size: 14px;
-}*/
-
-/*Caracteristicas de SASS*/
-
-//4) Puedo trabajar con archivos parciales:
-//Es una buena practica trabajar con archivos parciales y en el style.scss solo tener los imports
-@import "variables";
-@import"header";
-
-/*2) Puedo usar variables:
-$titulos: blue;
-$margen: 1rem;*/
-
-//1) Ahora puedo anidar selectores:
-/*header {
+header {
     background-color: bisque;
     display: flex;
     justify-content: space-between;
@@ -47,7 +26,4 @@ $margen: 1rem;*/
             }
         }
     }
-}*/
-
-//3) Puedo realizar operaciones matematicas:
-
+}

@@ -31,4 +31,36 @@ header nav li a {
   text-transform: uppercase;
 }
 
+/*2) Puedo usar variables:
+$titulos: blue;
+$margen: 1rem;*/
+/*header {
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        //color:red;
+        color : $titulos;
+    }
+
+    nav{
+        background-color: aquamarine;
+
+        li{
+            display: inline-block;
+            list-style: none;
+            margin: $margen;
+
+            a{
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+}*/
+
 /*# sourceMappingURL=style.css.map */
