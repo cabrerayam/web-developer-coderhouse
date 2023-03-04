@@ -30,3 +30,154 @@ pueden ser lineales o radiales */
 .cajaC{
     background-image: radial-gradient(#e55666, #2bc0e4);
 }
+
+
+/************* TRANSFORMACIONES **************/
+
+/*Una transformación es una modificación de la forma en que se ve un elemento. Todo elemento transformado por CSS cambia la forma en que se ve pero no el lugar que ocupa */
+
+/*Podemos mover un elemento, escalar su tamaño, girarlo, etc*/
+
+/*TRASLADAR UN ELEMENTO*/
+
+.cajaUno{
+    background-color: red;
+    transform: translate(20px, 10px);
+    /*transform: translate(-50px, -10px); /* (eje x, eje y) positivo sentido horario y negativo antihorario */
+}
+
+/*ROTAR UN ELEMENTO*/
+
+.cajaDos{
+    background-color: aqua;
+    transform: rotate(-45deg) ; /*(grados)*/
+}
+
+/*ESCALAR UN ELEMENTO*/
+
+/*Admite dos valores separados por comas, 
+el primer valor es el ancho(eje x), 
+El segundo valor es el alto (eje y)
+valores mayores a 1 agrandan y 
+valores entre 1 y cero achican*/
+
+.cajaTres{
+    background-color: blueviolet;
+    transform: scale(1.2, 0.8);
+
+}
+
+/*CESGAR UN ELEMENTO*/
+/*Se utilizar para deformar completamente un elemento */
+.cajaCuatro{
+    background-color: yellowgreen;
+    transform: skew(10deg , 20deg);
+}
+
+
+/************* TRANSICIONES**************/
+
+.divUno{
+    background-color: blueviolet;
+    transition: all 1s;
+    /*transition: width 1s, height 0.5s;*/
+}
+
+.divUno:hover{
+    background-color: bisque;
+    height: 320px;
+    width: 320px;
+}
+
+.divDos{
+    background-color: aquamarine;
+}
+
+.divDos{
+    background-image: url('https://placekitten.com/200/300') ;
+    filter: grayscale(90%);
+    transition: all 2s;
+}
+
+.divDos:hover{
+    filter: grayscale(10%);
+}
+
+
+/************* ANIMACIONES **************/
+
+/*Una animacion es un efecto que se loopea tantas veces como uno quiera,
+no depende del cambio de estado, el elemento se animara desde que se carga la web*/
+
+/*
+1. configurar el keyframe o la linea de tiempo de la animacion.
+*/
+
+@keyframes animacion {
+
+    0%{
+        width: 220px;
+    }
+
+    25%{
+        width: 240px;
+    }
+
+    50%{
+        width: 260px;
+    }
+
+    75%{
+        width: 280px;
+    }
+
+    100%{
+        width: 300px;
+    }   
+}
+
+.animacion{
+    background-color: gold;
+
+    /*El nombrfe del keyframe*/
+    animation-name: animacion;
+
+    /*Cantidad de repeticiones*/
+    animation-iteration-count: infinite;
+
+    /*Duracion de la animacion*/
+    animation-duration: 2s;
+
+}
+
+
+/*Ejemplo con texto*/
+
+@keyframes texto {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+h1 {
+    color: red;
+    font-size: 80px;
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+/************* LIBRERIAS DE ANIMACIONES **************/
+
+/*https://michalsnik.github.io/aos/*/
+/*OTRA LIBRERIA DE ANIMACIONES  https://animate.style/*/
+
+div {
+color: blue;
+
+}
