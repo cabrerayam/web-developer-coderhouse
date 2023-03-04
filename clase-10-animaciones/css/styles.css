@@ -1,0 +1,28 @@
+/* estilo de cajas */
+
+.item {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+/* GRADIENTES */
+/* son fondos en degrade
+pueden ser lineales o radiales */
+
+/*paginas para ver gradientes https://uigradients.com/ ,  https://webgradients.com/*/
+
+.cajaA {
+    background: linear-gradient(to right,#e55666, #5f7e78);
+}
+
+.cajaB{
+    background-image: linear-gradient(to left, #e55666, #5f7e78);
+}
+
+/*RADIALES*/
+
+.cajaC{
+    background-image: radial-gradient(#e55666, #2bc0e4);
+}
