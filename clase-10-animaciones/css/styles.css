@@ -17,6 +17,10 @@ pueden ser lineales o radiales */
     background: linear-gradient(to right,#e55666, #5f7e78);
 }
 
+/*Su forma predeterminada es de arriba hacia abajo*/
+/*Los puntos de inicio pueden ser top, bottom, left, right*/
+/*Pueden colocar todos los valores que quieran y puede ser en diagonal*/
+
 .cajaB{
     background-image: linear-gradient(to left, #e55666, #5f7e78);
 }
